@@ -133,14 +133,63 @@ console.log("match", string.match(/hello/gi));
 any unicode convert to character.
 ---------------*/
 const name1 = "\u0041\u006d\u00e9\u006c\u0069\u0065";
-console.log(name1.normalize());
+console.log("normalize", name1.normalize());
 
 /*-------------
-certain length er upor base kore space niye nibe jodi 
+certain length er upor base kore space niye nibe  
 ---------------*/
-console.log(string.padEnd(30, " foo"));
+console.log("padEnd", string.padEnd(30, " foo"));
 
 /*-------------
-certain length er upor base kore space niye nibe jodi length declare kore dewa value er ceye besi hoi tahole faka space nibe
+certain length er upor base kore space nibe
 ---------------*/
-console.log(string.padStart(30, " foo"));
+console.log("padStart", string.padStart(30, " foo"));
+
+/*-------------
+kono value koibar repeat korbe seta 
+---------------*/
+console.log("repeat", string.repeat(3));
+
+/*-------------
+replace methods a 2ta syntax use hoi 1ti holo keke replace korbe then 2nd ti holo ki replace hobe
+---------------*/
+console.log("replace", string.replace("Hello", "Hi"));
+
+/*-------------
+akti string a kon word koto index a ace seti return kore. 
+---------------*/
+console.log("search", string.search());
+
+/*-------------
+akti string er koto index teke koto index porjontto show korbe 
+---------------*/
+console.log("slice", string.slice(3, 6));
+
+/*-------------
+akti string ke space or character er upor base kore oi string ke akti array te convert kore.
+---------------*/
+console.log("split", string.split(" "));
+
+/*-------------
+string values ki diye start hoyece seti check kore true or false return kore. it's case-sensitive. 
+---------------*/
+console.log("startWith", string.startsWith("h"));
+
+/*-------------
+any string ke uppercase a convert kore
+---------------*/
+console.log("toUpperCase", string.toUpperCase());
+
+/*-------------
+any string ke lowercase a convert kore
+---------------*/
+console.log("toLowerCase", string.toLowerCase());
+
+/*-------------
+je kono value ke string a convert kore without object 
+---------------*/
+const num = [3, 5];
+console.log("toString", num.toString());
+
+const trim = "    string     ";
+console.log(trim.trim());
