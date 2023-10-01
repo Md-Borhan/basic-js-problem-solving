@@ -191,5 +191,8 @@ je kono value ke string a convert kore without object
 const num = [3, 5];
 console.log("toString", num.toString());
 
+/*-------------
+this method any string values removes whitespace from both ends of this string
+---------------*/
 const trim = "    string     ";
 console.log(trim.trim());
