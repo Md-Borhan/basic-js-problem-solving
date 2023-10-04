@@ -51,8 +51,11 @@ console.log(window.history);
 
 console.log(window.navigator.clipboard);
 
-window.addEventListener("click", function () {
-  console.log("addEventListener: screen was clicked");
-});
-
 // window.print();
+
+const openGitHub = document.querySelector("#openGitHub");
+openGitHub.addEventListener("click", function () {
+  window.open(
+    "https://github.com/Md-Borhan/basic-js-problem-solving/blob/main/windowMethod.js"
+  );
+});
