@@ -10,13 +10,26 @@ console.log(`location.hostname: ${window.location.hostname}`);
 
 console.log(`location.hostname: ${window.location.protocol}`);
 
-// confirm("Are you sure you want to");
+const showConfirm = document.querySelector("#showConfirm");
 
-// prompt("What do you want to do");
+showConfirm.addEventListener("click", () => {
+  const wantTo = confirm("Are you sure you want to");
+  console.log(wantTo);
+  if (wantTo === true) {
+    alert("Thanks");
+  }
+});
 
-// window.open("www.google.com");
+const showPrompt = document.querySelector("#showPrompt");
 
-// window.close();
+showPrompt.addEventListener("click", () => {
+  prompt("Enter Your Name");
+});
+
+const closeWindow = document.querySelector("#closeWindow");
+
+window.close();
+closeWindow.addEventListener("click", () => {});
 
 setTimeout(function () {
   console.log("I came after 1 seconds later");
