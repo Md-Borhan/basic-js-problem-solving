@@ -49,3 +49,25 @@ if (product.deliveryStatus === "pending") {
 }
 
 console.log(product);
+
+const parent = {
+  value: 2,
+  method() {
+    return this.value + 1;
+  },
+};
+
+console.log(parent.method()); // 3
+// When calling parent.method in this case, 'this' refers to parent
+
+// child is an object that inherits from parent
+const child = {
+  __proto__: parent,
+};
+console.log(child.method()); // 3
+
+child.value = 4; // assign the value 4 to the property 'value' on child.
+// This shadows the 'value' property on parent.
+// The child object now looks like:
+// { value: 4, __proto__: { value: 2, method: [Function] } }
+console.log(child.method()); // 5

@@ -28,8 +28,9 @@ showPrompt.addEventListener("click", () => {
 
 const closeWindow = document.querySelector("#closeWindow");
 
-window.close();
-closeWindow.addEventListener("click", () => {});
+closeWindow.addEventListener("click", () => {
+  window.close();
+});
 
 setTimeout(function () {
   console.log("I came after 1 seconds later");
