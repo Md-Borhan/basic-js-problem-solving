@@ -1,7 +1,5 @@
 // In JavaScript there are many ways declare a function below the example
 
-//
-
 /* 
 1. Function Declaration
 Function declarations and function expressions have different behavior with regard to hoisting, so it's important to understand the difference and choose the appropriate method based on your needs.
